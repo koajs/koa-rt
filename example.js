@@ -1,9 +1,9 @@
 
-var koaRt = require('./');
+var rt = require('./');
 var koa = require('koa');
 var app = koa();
 
-app.use(koaRt());
+app.use(rt());
 
 app.use(function *(next){
   yield next;
