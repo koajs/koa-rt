@@ -7,18 +7,19 @@
   "author": "dead_horse <dead_horse@qq.com>",
   "files": ["index.js"],
   "dependencies": {
+
   },
   "devDependencies": {
+    "blanket": "*",
     "contributors": "*",
-    "koa": "*",
-    "microtime": ">=0.5.1",
+    "coveralls": "*",
+    "koa": "0.1.2",
+    "microtime": "0.5.1",
     "mocha": "*",
+    "mocha-lcov-reporter": "*",
     "should": "*",
     "supertest": "0.8.2",
-    "travis-cov": "*",
-    "coveralls": "*",
-    "mocha-lcov-reporter": "*",
-    "blanket": "*"
+    "travis-cov": "*"
   },
   "engines": {
     "node": ">= 0.11.9"
