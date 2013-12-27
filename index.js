@@ -1,15 +1,14 @@
-/*!
+/**!
  * koa-rt - index.js
- * Copyright(c) 2013 dead_horse <dead_horse@qq.com>
+ * Copyright(c) 2013
  * MIT Licensed
+ *
+ * Authors:
+ *   dead_horse <dead_horse@qq.com>
+ *   fengmk2 <fengmk2@gmail.com> (http://fengmk2.github.com)
  */
 
 "use strict";
-
-/**
- * Module dependencies.
- */
-var microtime = require('microtime');
 
 /**
  * Add X-Response-Time header field.
@@ -20,12 +19,13 @@ var microtime = require('microtime');
 
 function responseTime(options) {
   options = options || {};
+  var timer = options.timer || Date;
   var headerName = options.headerName || 'X-Response-Time';
-  
+
   return function *responseTime(next){
-    var start = microtime.now();
+    var start = timer.now();
     yield* next;
-    var delta = microtime.now() - start;
+    var delta = timer.now() - start;
     this.set(headerName, delta);
   };
 }
