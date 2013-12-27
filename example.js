@@ -1,12 +1,12 @@
 
 var rt = require('./');
+var microtime = require('microtime');
 var koa = require('koa');
 var app = koa();
 
-app.use(rt());
+app.use(rt({timer: microtime}));
 
 app.use(function *(next){
-  yield next;
   yield sleep(150);
   this.body = 'Hello';
 });

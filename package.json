@@ -7,10 +7,17 @@
   "author": "dead_horse <dead_horse@qq.com>",
   "files": ["index.js"],
   "dependencies": {
-    "microtime": "0.5.1"
   },
   "devDependencies": {
-    "koa": "*"
+    "contributors": "*",
+    "koa": "*",
+    "microtime": ">=0.5.1",
+    "mocha": "*",
+    "should": "*",
+    "supertest": "0.8.2"
+  },
+  "engines": {
+    "node": ">= 0.11.9"
   },
   "license": "MIT"
 }

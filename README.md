@@ -15,7 +15,6 @@ var app = koa();
 app.use(rt());
 
 app.use(function *(next){
-  yield next;
   yield sleep(150);
   this.body = 'Hello';
 });
