@@ -14,7 +14,11 @@
     "microtime": ">=0.5.1",
     "mocha": "*",
     "should": "*",
-    "supertest": "0.8.2"
+    "supertest": "0.8.2",
+    "travis-cov": "*",
+    "coveralls": "*",
+    "mocha-lcov-reporter": "*",
+    "blanket": "*"
   },
   "engines": {
     "node": ">= 0.11.9"

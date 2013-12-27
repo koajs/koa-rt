@@ -1,4 +1,5 @@
 koa-rt
+[![Build Status](https://secure.travis-ci.org/dead-horse/koa-rt.png)](http://travis-ci.org/dead-horse/koa-rt) [![Coverage Status](https://coveralls.io/repos/dead-horse/koa-rt/badge.png)](https://coveralls.io/r/dead-horse/koa-rt) [![Dependency Status](https://gemnasium.com/dead-horse/koa-rt.png)](https://gemnasium.com/dead-horse/koa-rt)
 ======
 
 koa rt with microtime
