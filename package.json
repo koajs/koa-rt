@@ -2,15 +2,22 @@
   "name": "koa-rt",
   "description": "X-Repsonse-Time middleware for koa with microtime",
   "repository": "dead-horse/koa-rt",
-  "version": "0.0.2",
-  "keywords": ["koa", "middleware", "response", "duration", "microtime"],
+  "version": "1.0.0",
+  "keywords": [
+    "koa",
+    "middleware",
+    "response",
+    "duration",
+    "microtime"
+  ],
   "author": "dead_horse <dead_horse@qq.com>",
-  "files": [ "index.js" ],
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "mocha --harmony test/*.test.js"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "koa": "1",
     "mocha": "*",
