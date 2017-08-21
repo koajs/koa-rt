@@ -5,21 +5,17 @@
   "version": "0.0.2",
   "keywords": ["koa", "middleware", "response", "duration", "microtime"],
   "author": "dead_horse <dead_horse@qq.com>",
-  "files": ["index.js"],
+  "files": [ "index.js" ],
+  "scripts": {
+    "test": "mocha --harmony test/*.test.js"
+  },
   "dependencies": {
-
   },
   "devDependencies": {
-    "blanket": "*",
-    "contributors": "*",
-    "coveralls": "*",
-    "koa": "0.1.2",
-    "microtime": "0.5.1",
+    "koa": "1",
     "mocha": "*",
-    "mocha-lcov-reporter": "*",
     "should": "*",
-    "supertest": "0.8.2",
-    "travis-cov": "*"
+    "supertest": "1"
   },
   "engines": {
     "node": ">= 0.11.9"

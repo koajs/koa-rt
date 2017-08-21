@@ -1,9 +1,9 @@
-koa-rt[![Build Status](https://secure.travis-ci.org/dead-horse/koa-rt.png)](http://travis-ci.org/dead-horse/koa-rt) [![Coverage Status](https://coveralls.io/repos/dead-horse/koa-rt/badge.png)](https://coveralls.io/r/dead-horse/koa-rt) [![Dependency Status](https://gemnasium.com/dead-horse/koa-rt.png)](https://gemnasium.com/dead-horse/koa-rt)
+koa-rt
 ======
 
-koa rt. can be custom with microtime.
+[![Build Status](https://secure.travis-ci.org/dead-horse/koa-rt.png)](http://travis-ci.org/dead-horse/koa-rt)
 
-[![NPM](https://nodei.co/npm/koa-rt.png?downloads=true)](https://nodei.co/npm/koa-rt/)
+koa rt. can be custom with microtime.
 
 ## Usage
 
