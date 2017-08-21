@@ -1,23 +1,8 @@
-/**!
- * koa-rt - test/rt.test.js
- *
- * Copyright(c) nae team and other contributors.
- * MIT Licensed
- *
- * Authors:
- *   fengmk2 <fengmk2@gmail.com> (http://fengmk2.github.com)
- */
-
 'use strict';
-
-/**
- * Module dependencies.
- */
 
 var koa = require('koa');
 var request = require('supertest');
-var microtime = require('microtime');
-var rt = require('../');
+var rt = require('..');
 
 function sleep(ms) {
   return function (done) {
@@ -26,9 +11,9 @@ function sleep(ms) {
 }
 
 describe('rt.test.js', function () {
-  it('should return rt headers with microtime', function (done) {
+  it('should return rt headers with custom timer', function (done) {
     var app = koa();
-    app.use(rt({timer: microtime}));
+    app.use(rt({ timer: Date }));
     app.use(function *(next) {
       yield sleep(150);
       this.body = 'Hello';
@@ -36,7 +21,7 @@ describe('rt.test.js', function () {
     request(app.listen(0))
     .get('/')
     .expect('Hello')
-    .expect('X-Response-Time', /^\d{6}$/)
+    .expect('X-Response-Time', /^\d+$/)
     .expect(200, done);
   });
 
